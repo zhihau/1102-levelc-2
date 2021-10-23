@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* content */
+        .main {
+            width: 1024px;
+            height: calc(768px - 90px - 25px - 45px);
+            background-color: lightskyblue;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            overflow: hidden;
+            background-color: #ffffff;
+            font-size: 14px;
+            color: #000000;
+        }
+
+        /* content .aside */
+        .aside {
+            flex-basis: 280px;
+            height: 460px;
+            /* background-color: magenta; */
+            border: 1px solid #999999;
+            display:flex;
+            flex-direction: column;
+            
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .aside>pre {
+            font-size: 16px;
+            font-weight: bolder;
+            text-align: left;
+        }
+
+        .aside>table th {
+            background-color: #3399ff;
+            font-size: 14px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .aside>table tr:nth-child(even) {
+            background-color: #FFFFCC;
+        }
+
+        .aside>table tr:nth-child(odd) {
+            background-color: #dddddd;
+        }
+
+        .aside>table td {
+            font-size: 12px;
+            line-height: 2.0;
+
+        }
+
+        /* content .section */
+        .section {
+
+            flex-basis: 590px;
+            height: 460px;
+            border: 1px solid #999999;
+            display: flex;
+            flex-direction: column;
+            background-color: #333333;
+            color: #ffff00;
+            font-size: 14px;
+        }
+
+        .image-display {
+            height: calc(100% - 80px - 10px - 29px);
+            width: 590px;
+            padding: 5px;
+        }
+        .image-display>img{
+            height: 100%;
+            width: 100%;
+        }
+
+        .thumbs {
+            display: flex;
+            justify-content: space-around;
+        }
+         .thumbs>section>pre{
+            margin: 5px auto;
+            text-align: center;
+        } 
+    </style>
+</head>
+
+<body class="main">
+    <aside class="aside">
+        <pre>最新消息</pre>
+        <table>
+            <tr>
+                <th>主題</th>
+                <th>發布日期</th>
+            </tr>
+
+            <tr>
+                <td><img src="../images/0201.png" alt="">公告全國技能競賽相關事宜</td>
+                <td>應檢當天日期</td>
+            </tr>
+            <tr>
+                <td><img src="../images/0201.png" alt="">公告即測即評及發證相關事宜</td>
+                <td>應檢當天日期</td>
+            </tr>
+            <tr>
+                <td><img src="../images/0201.png" alt="">公告網頁設計修題相關事宜</td>
+                <td>應檢當天日期</td>
+            </tr>
+            <tr>
+                <td><img src="../images/0201.png" alt="">公告網路架設應檢相關事宜</td>
+                <td>應檢當天日期</td>
+            </tr>
+        </table>
+
+
+
+
+
+
+    </aside>
+    <section class="section">
+        <main class="image-display">
+            <img src="../images/0202A.png" alt="">
+        </main>
+        <nav class="thumbs">
+            <section>
+                <a href="http://">
+                    <img src="../images/0202B.png" alt=""></a>
+                <pre>第30屆倫敦奧運</pre>
+            </section>
+            <section>
+                <a href="http://">
+                    <img src="../images/0203B.png" alt=""></a>
+                <pre>許淑淨奪舉重銀牌</pre>
+            </section>
+
+            <section>
+                <a href="http://">
+                    <img src="../images/0204B.png" alt=""></a>
+                <pre>第26屆深圳世大運</pre>
+            </section>
+
+            <section>
+                <a href="http://">
+                    <img src="../images/0205B.png" alt=""></a>
+                <pre>第27屆喀山世大運</pre>
+            </section>
+
+            
+
+
+
+
+
+        </nav>
+    </section>
+</body>
+
+</html>

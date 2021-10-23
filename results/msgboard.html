@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訪客留言網頁</title>
+    <style>
+        .header{
+
+        }
+        .nav{
+color: #ff0000;
+font-weight: bolder;
+        }
+        .content{
+        }
+        /* content .table */
+        
+        table{
+border-collapse: collapse;
+            border:1px solid #dddddd;
+
+        }
+        td{
+            border:1px solid #dddddd;
+        padding: 2px;
+        }
+        /* content .table th */
+        td.column1{
+width: 120px;
+text-align: center;
+        }
+        /* content .table th */
+        td.column2{
+width: 580px;
+text-align: left;
+        }
+    </style>
+    <script>
+        function send(){
+            alert('歡迎蒞臨本網站，您的寶貴意見我們會儘速處理與回覆，謝謝！');
+            reset();
+        }
+        function reset(){
+            document.getElementById("name").value="";
+            document.getElementById("email").value="";
+            document.getElementById("msg").value="";
+            document.getElementById("man").checked=true;
+            document.getElementById("woman").checked=false;
+            document.getElementById("career").selectedIndex="0";
+
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+<marquee behavior="" direction="">謝謝蒞臨本網站，請給予我們支持、鼓勵與建
+    言。</marquee>
+    </header>
+    <nav class="nav">
+        現在位置：首頁＞訪客留言
+    </nav>
+    <main class="content">
+<table>
+    <tr>
+        <td class="column1">姓名</td>
+        <td class="column2"><input type="text" name="" id="name" size="20" ></td>
+    </tr>
+    <tr>
+        <td class="column1">電子郵件</td>
+        <td class="column2"><input type="text" name="" id="email" size="60"></td>
+    </tr>
+    <tr>
+        <td class="column1">性別</td>
+        <td class="column2"><input type="radio" name="sex" id="man" checked>男<input type="radio" name="sex" id="woman">女</td>
+    </tr>
+    <tr>
+        <td class="column1" style="vertical-align: middle;">職業類別</td>
+        <td class="column2"><select name="" id="career">
+            <option value="0">-----------請選擇職業類別-----------</option>
+            <option value="1">1.現役軍人</option>
+            <option value="2">2.專業人員</option>
+            <option value="3">3.技術員及助理專業人員</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td class="column1">留言內容</td>
+        <td class="column2">
+            <textarea name="" id="msg" cols="78" rows="10"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td class="column1"><input type="button" value="送出" onclick="send()">
+            <input type="button" value="重寫" onclick="reset()"></td>
+        <td class="column2">
+            
+        </td>
+    </tr>
+</table>
+    </main>
+</body>
+</html>

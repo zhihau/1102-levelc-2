@@ -1,0 +1,68 @@
+*{
+box-sizing: border-box;
+
+}
+/* main */
+.main{
+    margin: 0px;
+    width: 1024px;
+    height:768px;
+    display: flex;
+    justify-content: center;
+    margin:10px auto;
+    flex-wrap: wrap;
+}
+/* top */
+.top{
+    flex-basis: 1024px;
+    height:90px;
+    background-color:#00B0F0;
+    display: flex;
+}
+/* top .subject */
+.subject{
+    font-size: 52px;
+    font-family: "標楷體";
+    color:#ffffff;
+    text-shadow: 10px 10px 15px #333333;
+    margin: auto 0px;
+}
+/* menu */
+.menu{
+    flex-basis: 1024px;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #eeeeee;
+    /* background-color: lightpink; */
+}
+.menu>a{
+    background-color: #eeeeee;
+    color:#000000;
+    text-decoration: none;
+    font-style: normal;
+}
+.menu>a:hover{
+    background-color: #ffff00;
+    font-size: 14px;
+    color:#ff0000;
+    font-weight: bold;
+    cursor:pointer;
+}
+/* content */
+.content{
+    flex-basis: 1024px;
+    height: calc(100% - 90px - 25px - 45px);
+    background-color: lightskyblue;
+    
+}
+
+/* footer */
+.footer{
+    flex-basis: 1024px;
+    height: 45px;
+    background-color:#cccccc;
+    color:#ffffff;
+    font-size: 14px;
+    text-align: center;
+}
