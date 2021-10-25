@@ -53,8 +53,7 @@ box-sizing: border-box;
 .content{
     flex-basis: 1024px;
     height: calc(100% - 90px - 25px - 45px);
-    background-color: lightskyblue;
-    
+    /* background-color: lightskyblue; */
 }
 
 /* footer */

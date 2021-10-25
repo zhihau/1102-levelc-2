@@ -88,11 +88,21 @@
             display: flex;
             justify-content: space-around;
         }
+        .thumbs img{
+            cursor: pointer;
+        }
          .thumbs>section>pre{
             margin: 5px auto;
             text-align: center;
         } 
     </style>
+    <script>
+        function changeImage(name){
+            fileName='../images/'+name;
+            document.getElementById("display").src=fileName;
+            
+        }
+    </script>
 </head>
 
 <body class="main">
@@ -130,29 +140,29 @@
     </aside>
     <section class="section">
         <main class="image-display">
-            <img src="../images/0202A.png" alt="">
+            <img src="../images/0202A.png" alt="" id="display">
         </main>
         <nav class="thumbs">
             <section>
-                <a href="http://">
-                    <img src="../images/0202B.png" alt=""></a>
+                
+                <img src="../images/0202B.png" alt="" onclick="changeImage('0202A.png')">
                 <pre>第30屆倫敦奧運</pre>
             </section>
             <section>
-                <a href="http://">
-                    <img src="../images/0203B.png" alt=""></a>
-                <pre>許淑淨奪舉重銀牌</pre>
+                
+                    <img src="../images/0203B.png" alt="" onclick="changeImage('0203A.png')">
+                <pre>許淑淨奪舉重銀牌
             </section>
 
             <section>
-                <a href="http://">
-                    <img src="../images/0204B.png" alt=""></a>
+                
+                    <img src="../images/0204B.png" alt="" onclick="changeImage('0204A.png')">
                 <pre>第26屆深圳世大運</pre>
             </section>
 
             <section>
-                <a href="http://">
-                    <img src="../images/0205B.png" alt=""></a>
+                
+                    <img src="../images/0205B.png" alt="" onclick="changeImage('0205A.png')">
                 <pre>第27屆喀山世大運</pre>
             </section>
 
